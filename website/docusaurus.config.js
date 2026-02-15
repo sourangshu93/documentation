@@ -12,8 +12,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://sourangshu93.github.io/',
-  baseUrl: '/pages/documentation/',
+  url: 'https://sourangshu93.github.io',
+  baseUrl: '/documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
