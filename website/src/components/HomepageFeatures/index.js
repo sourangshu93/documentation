@@ -36,6 +36,17 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: 'AI ML',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    href: './docs/aiml',
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
 ];
 
 function Feature({Svg, title, description}) {
