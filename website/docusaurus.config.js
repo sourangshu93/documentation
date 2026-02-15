@@ -88,7 +88,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'cloudSidebar',
             position: 'left',
-            label: 'Cloud Computing',
+            label: 'Cloud',
           },
           {
             type: 'docSidebar',
@@ -106,9 +106,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'aiSidebar',
             position: 'left',
-            label: 'AI ML',
+            label: 'AI/ML',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/sourangshu93/documentation',
             label: 'GitHub',
