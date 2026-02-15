@@ -106,13 +106,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'aiSidebar',
             position: 'left',
-            label: 'AI',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'mlSidebar',
-            position: 'left',
-            label: 'Machine Learning',
+            label: 'AI ML',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -160,7 +154,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/sourangshu93/documentation',
               },
             ],
           },
