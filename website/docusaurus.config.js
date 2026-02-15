@@ -14,37 +14,44 @@ const config = {
 
   url: 'https://sourangshu93.github.io',
   baseUrl: '/documentation/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sourangshu93', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
-
+  onBrokenLinks: 'ignore',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownImages: 'ignore',
+    }
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: "./../docs",
           sidebarPath: './sidebars.js',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
+          sidebarCollapsible: true,
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/sourangshu93/documentation/tree/main/docs/',
         },
         blog: {
+          path: "./../blogs",
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/sourangshu93/documentation/tree/main/blogs/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -75,11 +82,41 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Home',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'cloudSidebar',
+            position: 'left',
+            label: 'Cloud Computing',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'kubernetesSidebar',
+            position: 'left',
+            label: 'Kubernetes',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'programmingSidebar',
+            position: 'left',
+            label: 'Programming',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'aiSidebar',
+            position: 'left',
+            label: 'AI',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'mlSidebar',
+            position: 'left',
+            label: 'Machine Learning',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/sourangshu93/documentation',
             label: 'GitHub',
             position: 'right',
           },

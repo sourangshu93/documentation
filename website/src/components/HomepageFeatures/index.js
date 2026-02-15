@@ -4,8 +4,9 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Cloud Computing',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    href: './docs/cloud',
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -14,8 +15,9 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Kubernetes',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    href: './docs/kubernetes',
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -24,8 +26,9 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Programming',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    href: './docs/programming',
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
